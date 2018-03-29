@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <style>
+        body{background:url(img/startrails-485598_1920.jpg)}
+        tr{width:800px; height:100px; color: black; background-color: aqua;}
+        *{margin:0px; padding:0px;}
+    form{width:300px; height:50px;}
+    body{background:url(img/startrails-485598_1920.jpg); background-size:100% 100%;}
+    
+    ul{width:1800px; height:120px;  color:white;font-size:25px;opacity: 1s.0; border:5px; border-color: black; font font-style: oblique;}
+    ul>li{width:450px; height:120px; list-style: none; line-height:120px; text-align:center; float:left; }
+    ul>li>ul{width:450px; height:0px; overflow: hidden; list-style:none; }
+    ul>li:hover>ul{transition:all 1.3s; height: 480px; background-color:aliceblue;}
+    ul>li>ul>li{width:450px; height:120px; text-align: center; background-color:deepskyblue; color#000;}
+    ul>li>ul>li:hover{background-color:#fcf;}
+        img{width: 50px; height: 50px; float: right; margin-top:80px;}
+        a{background-color: aqua;}
+    </style>
+    </head>
+    <body>
+         <ul>
+        <li>소개
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </li>
+        <li>1
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </li>
+        <li>2    
+            <ul>
+                <li>미술</li>
+                <li>포토샵</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </li>
+        <li>개발자
+            <ul>
+                <a href="member.html"><li>1</li></a>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </li>
+    </ul>
+    <table>
+    <tr>
+        <td>이름</td>
+        <td><input type="text" name="user_name" /></td>
+    </tr>
+    <tr>
+        <td>아이디</td>
+        <td><input type="text" name="user_id" /></td>
+    </tr>
+    <tr>
+        <td>비밀번호</td>
+        <td><input type="password" name="user_pw" /></td>
+    </tr>
+    <tr>
+        <td>비밀번호 확인</td>
+        <td><input type="text" name="user_pw2" /></td>
+    </tr>
+    <tr>
+        <td>주소</td>
+        <td><input type="text" name="user_address" /></td>
+    </tr>
+    <tr>
+        <td>생년월일</td>
+        <td><select name="user_birth_year"><br>
+                <option value="1996" selected>1996</option><br>
+                <option value="1997" selected>1997</option><br>
+                <option value="1998" selected>1998</option><br>
+                <option value="1999" selected>1999</option><br>
+                <option value="2001" selected>2001</option><br>
+                <option value="2002" selected>2002</option><br>
+                <option value="2003" selected>2003</option><br>
+                <option value="2004" selected>2004</option><br>
+            </select>
+            년
+            <select name="user_birth_month"><br>
+                <option value="1">1</option><br>
+                <option value="2">2</option><br>
+                <option value="3">3</option><br>
+                <option value="4">4</option><br>
+                <option value="5">5</option><br>
+                <option value="6">6</option><br>
+                <option value="7">7</option><br>
+                <option value="8">8</option><br>
+                <option value="9">9</option><br>
+                <option value="10">10</option><br>
+                <option value="11">11</option><br>
+                <option value="12">12</option><br>
+            </select>
+            월
+            <select name="user_birth_day"><br>
+                <option value="1">1</option><br>
+                <option value="2">2</option><br>
+                <option value="3">3</option><br>
+                <option value="4">4</option><br>
+                <option value="5">5</option><br>
+                <option value="6">6</option><br>
+                <option value="7">7</option><br>
+                <option value="8">8</option><br>
+                <option value="9">9</option><br>
+                <option value="10">10</option><br>
+                <option value="11">11</option><br>
+                <option value="12">12</option><br>
+                <option value="13">13</option><br>
+                <option value="14">14</option><br>
+                <option value="15">15</option><br>
+                <option value="16">16</option><br>
+                <option value="17">17</option><br>
+                <option value="18">18</option><br>
+                <option value="19">19</option><br>
+                <option value="20">20</option><br>
+                <option value="21">21</option><br>
+                <option value="22">22</option><br>
+                <option value="23">23</option><br>
+                <option value="24">24</option><br>
+                <option value="25">25</option><br>
+                <option value="26">26</option><br>
+                <option value="27">27</option><br>
+                <option value="28">28</option><br>
+                <option value="29">29</option><br>
+                <option value="30">30</option><br>
+                <option value="31">31</option><br>
+</select>
+일
+</td>
+</tr>
+<tr>
+<td>직업</td>
+<td><select name="user_job">
+    <option value="student">학생</option><br>
+    <option value="teacher">교사</option><br>
+    <option value="developer">개발자</option><br>
+    <option value="publisher">퍼블리셔</option><br>
+    <option value="driver">운전사</option><br>
+    <option value="architecture">건축가</option><br>
+    <option value="actor">배우</option><br>
+</select>
+    <button type="submit" value="완료">완료</button>
+</tr>
+</table>
+    <a href="https://www.youtube.com/channel/UCUK_2hD6X-d5IjiWiOx0K4g"><img src="img/youtube.png"></a> 
+    <a href="https://www.facebook.com/profile.php?id=100009519485464&lst=100009519485464%3A100009519485464%3A1493875410"><img src="img/facebook.jpg"></a>
+    <a href="https://open.kakao.com/o/saitCCu"><img src="img/kakao%20talk.png"></a>
+</body>
+</html>

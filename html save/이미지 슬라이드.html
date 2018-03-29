@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<script type="text/javascript"> 
+ function check(){
+     var checks = document.getElementsByName("chk-one");
+    for (i=0; i < checks.length; i++) {
+        if(checks[i].checked == true) {
+            alert("ok")
+            break
+        }
+    }
+     var checks = document.getElementsByName("chk-two");
+    for (i=0; i < checks.length; i++) {
+        if(checks[i].checked == true) {
+            alert("ok2")
+            break
+        }
+    }
+     
+ }
+ </script>
+</head>
+<body>
+<h1>checks text</h1>
+ <p>
+  <input type="radio" name="chk-one" value="1">1
+  <input type="radio" name="chk-one" value="2">2
+  <input type="radio" name="chk-one" value="3">3
+  <input type="radio" name="chk-one" value="4">4
+ </p>
+ <p>
+  <input type="radio" name="chk-two" value="1">1
+  <input type="radio" name="chk-two" value="2">2
+  <input type="radio" name="chk-two" value="3">3
+  <input type="radio" name="chk-two" value="4">4
+ </p>
+<form name="input" method="post" action="">
+<input type="submit" value="확인" onClick="check()"></form>
+</body>
+</html>

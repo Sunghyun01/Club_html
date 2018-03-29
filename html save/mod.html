@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .wrap{width:1600px; height: 2500px; margin: 0 auto;}
+        header{width: 1600px; background-color: gray;}
+        header>p{font-size: 35px; color: white;}
+        header>p>span{color: #3be83b; font-size: 35px;}
+        nav{width: 1600px; height: 100px; }
+        ul{float: right; color: white; margin: 10px; list-style: none;}
+        ul>li{width: 100px; height: 50px; text-align: center; line-height: 50px; float: left; background-color: gray; border-top: 2px black;}
+        ul>li:hover{background-color: green; }
+        section>header{width: 1600px; height: 1000px; background-color: white;}
+        section>header>img{width: 100%; height: 500px;}
+        section>header>p{width: 1600px; height: 100px; font-size: 20px; background-color: dimgray; color: white; text-align: center;}
+        #imgs{width: 400px; height: 300px; margin-left: 100px; margin-top: 50px; background-color: white;margin-bottom: 50px;}
+        
+        section>article{width: 100%; height: 800px; background-color: antiquewhite; }
+        section>article>img{width: 300px; height: 300px; margin-left: 150px;}
+        section>article>p{width: 1600px; height: 100px; font-size: 25px; text-align: center; color: black;}
+        section>footer{width: 1600px; height: 500px;}
+        section>footer>img{width: 300px; height: 200px; margin-left: 150px; margin-top: 100px;}
+       
+        #button1{width: 100px; height: 50px;  background-color: aquamarine; margin-top: 50px;margin-left: 150px;}
+        #button2{width: 100px; height: 50px;  background-color: aquamarine; margin-left: 350px;}
+        #button3{width: 100px; height: 50px;  background-color: aquamarine; margin-left: 350px;}
+        .button>p{width: 300px; height: 50px; background-color: white;  color: black; font-size: 20px;margin-left: 150px;}
+        .wrap>footer>header{width: 1600px; height: 200px; background-color: bisque; text-align: center; font-size: 30px;}
+        .wrap>footer>footer{width: 1600px; height: 200px; background-color:#46b39e;}
+        .wrap>footer>footer>img{margin-left: 500px; margin-top: 50px;}
+    </style>
+</head>
+<body>
+   <div class="wrap">
+    <header>
+        <p>SEOUL <span>LIBRARY</span></p>
+        <nav>
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>VIDEOS</li>
+            <li>PROGRAM</li>
+            <li>CATALOG</li>
+            <li>CONTACTS</li>
+        </ul>
+        </nav>
+    </header>
+    <section>
+       <header>
+        <img src="img/%EC%8B%A4%EA%B8%B0%EB%B0%94%E3%85%8F%E3%85%87.JPG">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ipsum esse excepturi facilis neque laboriosam recusandae ex itaque quae doloremque aliquam repudiandae libero id voluptatibus eius sapiente enim, nisi amet!</p>
+        
+        <img src="img/menu.JPG" id="imgs"><img src="img/menu2.JPG" id="imgs"><img src="img/menu3.JPG" id="imgs">
+        
+        </header>
+       </section>
+       <section>
+        <article>
+            <p>MOST POPULAR</p>
+             <img src="img/coffe.jpg">
+             <img src="img/mod1.JPG">
+             <img src="img/coffe.jpg">
+             <img src="img/mod3.JPG">
+             <img src="img/mod2.JPG">
+             <img src="img/mod3.JPG">
+        </article>
+       </section>
+       <section>
+        <footer>
+            <img src="img/mod2.JPG">
+            <img src="img/mod2.JPG">
+            <img src="img/mod2.JPG">
+        <div class="button">
+            <p>텍스트 입력</p>
+            
+            <button id="button1"type="button">READ MORE</button>
+            <button id="button2"type="button">READ MORE</button>
+            <button id="button3"type="button">READ MORE</button>
+        </div>
+           </footer>
+       </section>
+       <footer>
+          <header>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt, cum eius adipisci aliquid saepe eaque voluptatum atque minus placeat nulla, incidunt veniam in quos dolore reprehenderit. Accusamus, distinctio, atque.
+          </header>
+          <footer>
+              <img src="img/footer.JPG">
+          </footer>
+       </footer>
+    </div>
+</body>
+</html>

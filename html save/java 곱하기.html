@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+    
+</body>
+<script>
+    //for문 계산기
+    var i=0;
+    var j=0;
+  for(var i=1;i<100;i++){  
+        for(var j=1;j<10;j++){
+            document.write(i+"x"+i*j+"="+i*j+"</br>");
+        }
+        document.write("</br>");
+    }
+    //i*j == ixj
+    document.write("=====================================</")
+    //while문 계산기
+    var a=1; b=1;
+    while(a<10){
+        b=1;
+        while(b<10){
+            document.write(a+"x"+b+"="+a*b+"</br>");
+            b++;
+        }
+       a++;      
+    }
+    //a*b==axb
+    
+</script>
+<script>
+        var date = new Date();
+        var year = date.getFullYear();
+        var month =date.getMonth();
+        var day = date.getDate();
+        
+        var birth=prompt("입력 ㄱ","");
+        if(birth.length==8){
+        var year_u=birth.substring(0,4);
+        var month_u=birth.substring(5,6);
+        var day_u=birth.substring(7,8);
+            
+        if(month<=month_u && day<day_u){
+            alert("만"+(year-year_u)+"살");
+        }
+        else{
+         alert("만"+(year-year_u-1)+"살");   
+        }
+        }
+        else{
+            alert("문자열이 맞지 않는것 같습니다 다시 입력해 주세요");
+            location.reload();
+        }
+       location.reload();
+    </script>
+</html>

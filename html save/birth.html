@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var date = new Date();
+        var year = date.getFullYear();
+        var month =date.getMonth()+1;
+        var day = date.getDate();
+        
+        var birth=prompt("생년월일 입력 ex)20010804","");
+        
+        var year_u=birth.substr(0,4);
+        var month_u=birth.substr(4,2);
+        var day_u=birth.substr(6,2);
+        var b=new Date(year_u+"/"+month_u+"/"+day_u);
+        month_u *= 1;
+        day_u *= 1;
+//    alert(year_u+"/"+month_u+"/"+day_u);
+//    alert(year+"/"+month+"/"+day);
+        if(b!="Invalid Date"){
+            if(date>=b){
+                if(month>month_u){
+                    alert("만"+(year-year_u)+"살\n한국나이"+(year-year_u+1)+"살");
+                } else if(month==month_u && day>=day_u){
+                    alert("만"+(year-year_u)+"살\n한국나이"+(year-year_u+1)+"살");
+                } else{
+                    alert("만"+(year-year_u-1)+"살\n한국나이"+(year-year_u+1)+"살");   
+                }   
+            } else{
+                alert("미래의 날짜가 입력되었습니다")
+            }
+        } else{
+            alert("날짜 입력이 잘못된거 같습니다");
+            location.reload();
+        }
+       location.reload();
+        
+    </script>
+</body>
+</html>
