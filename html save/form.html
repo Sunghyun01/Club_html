@@ -4,60 +4,88 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>*{margin: 0;padding: 0;}
-        .item_id dt{float: left;}
-        .item_id dd{float: left;}
-
+        .item_id dt{float: left; margin-top: 50px;}
+        .item_id dd{float: left;margin-top: 50px;}
         .item_pw dt{float: left;}
         .item_pw dd{float: left;}
-
         .item_name dt{float: left;}
         .item_name dd{float: left;}
-
         .item_address dt{float: left;}
         .item_address dd{float: left;}
+        .item_phone dt{float: left;}
+        .item_phone dd{float: left;}
+        #phone{width: 345px;}
          #sign{
              width: 1000px;
              margin: 0 auto;
          }
-        .item_pw, .item_id, .item_name,.item_address{
+        .item_pw, .item_id, .item_name,.item_address,.item_phone{
             overflow: hidden;
-
         }
         #sign_wrap{
             width: 700px;
             padding: 50px;
             margin: 0 auto;
         }
+        .sign_box{
+            border-top: 1px solid black;
+            height: 250px;
+            width: 700px;
+        }
         dt{width: 200px;}
         dl{padding: 10px;}
+        select{height: 34px;}
         input{width: 400px;height: 30px;}
+        #btn_box{width: 700px;text-align: center;}
+        button{background: #4d87ef;color: white;
+        width: 200px;height: 50px;}
+        
     </style>
 </head>
 <body>
     <div id="sign">
         <div id="sign_wrap">
             <form action="">
-                <dl class="item_id">
-                    <dt><label for="id">아이디</label></dt>
-                    <dd><input type="text" id="id" name="id"></dd>
-                </dl>
-                <dl class="item_pw">
-                    <dt><label for="password">비밀번호</label></dt>
-                    <dd><input type="password" id="password" name="password"></dd>
-                    <dd id="none"></dd>
-                    <dt><label for="pwd_chk">비밀번호 확인</label></dt>
-                    <dd><input type="password" id="pwd_chk" name="pwd_chk"></dd>
-                </dl>
-                <dl class="item_name">
-                    <dt><label for="">이름</label></dt>
-                    <dd><input type="text" id="name" name="name"></dd>
-                </dl>
-
-                <dl class="item_address">
-                    <dt><label for="">주소</label></dt>
-                    <dd><input type="text" id="address" name="address"></dd>
-                </dl>
-                <button type="submit" id="sign_ok">확인</button>
+                <div class="sign_box">   
+                    <dl class="item_id">
+                        <dt><label for="id" >아이디</label></dt>
+                        <dd><input type="text" id="id" name="id" placeholder="아이디"></dd>
+                    </dl>
+                    <dl class="item_pw">
+                        <dt><label for="password">비밀번호</label></dt>
+                        <dd><input type="password" id="password" name="password" placeholder="비밀번호 8자이상)"></dd>
+                        <dd id="none"></dd>
+                        <dt><label for="pwd_chk">비밀번호 확인</label></dt>
+                        <dd><input type="password" id="pwd_chk" name="pwd_chk" placeholder="비밀번호 재확인"></dd>
+                    </dl>
+                </div>
+                <div class="sign_box">
+                    <dl class="item_name">
+                        <dt><label for="">이름</label></dt>
+                        <dd><input type="text" id="name" name="name" placeholder="이름"></dd>
+                    </dl>
+                    <dl class="item_phone">
+                        <dt><label for="">휴대폰 번호</label></dt>
+                        <dd>
+                           <select>
+                               <option value="">+82/</option>
+                               <option value="">+1/</option>
+                               <option value="">+86/</option>
+                               <option value="">+81/</option>
+                               <option value="">+61/</option>
+                           </select>
+                            <input type="text" id="phone" name="phone" placeholder="휴대폰 번호"><br>
+                            <input type="text" id="key" name="key" placeholder="인증번호(10분동안 유효)">
+                        </dd>
+                    </dl>
+                    <dl class="item_address">
+                        <dt><label for="">본인 확인용<br>이메일 주소</label></dt>
+                        <dd><input type="text" id="address" name="address" placeholder="본인확인용 이메일(선택)"></dd>
+                    </dl>
+                </div>
+                <div id="btn_box">
+                    <button type="submit" id="sign_ok">다음 단계</button>    
+                </div>
             </form>
         </div>
     </div>
