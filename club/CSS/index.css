@@ -1,0 +1,256 @@
+*{margin: 0;padding: 0; box-sizing: border-box;}
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+.wrap{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+/*상단 메뉴*/
+header{
+    width: 100%; 
+    height: 1000px;background-image:url(space.jpg);
+    background-position: center;
+    background-position: center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+}
+/*메인 페이지 내 텍스트 박스*/
+h1{
+    font-family: 'Dancing Script', cursive;font-size: 70px;
+}
+p{
+    font-size: 40px;
+    font-family: 'Indie Flower', cursive;
+}
+#text_box{
+    width: 900px;
+    height: 300px;
+    position: absolute;
+    z-index: 5;
+    margin-top: 350px;
+    margin-left: 500px; 
+    color: white;
+    text-align: center;
+}
+nav{
+    width: 100%;
+    height: 700px;
+}
+/*nav*/
+nav h2{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+nav p{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    line-height: 100px;
+}
+/*메뉴*/
+#cssmenu, #cssmenu ul, #cssmenu ul li, #cssmenu ul li a {
+	list-style: none;
+	line-height: 1;
+	display: block;
+}
+#cssmenu {
+	width: 220px;
+	height: 280px;
+	font-family: Raleway, sans-serif;
+	color: #ffffff;
+    top:300px;
+    left: 1650px;
+    position: fixed;
+    z-index: 20;
+}
+#cssmenu ul ul {
+	display: none;
+}
+#cssmenu > ul > li > a {
+	padding: 16px 22px;
+	cursor: pointer;
+	z-index: 2;
+	font-size: 16px;
+	text-decoration: none;
+	color: #ffffff;
+	background: #3ab4a6;
+}
+#cssmenu > ul > li > a:hover {
+	color: #d8f3f0;
+}
+#cssmenu ul ul li a {
+	padding: 14px 22px;
+	cursor: pointer;
+	z-index: 2;
+	font-size: 14px;
+	text-decoration: none;
+	color: #dddddd;
+	background: #49505a;
+}
+#cssmenu ul ul li a:hover {
+	color: #ffffff;
+}
+/*하드웨어 소프트웨어*/
+#hardware{
+    width: 50%;
+    height: 500px;
+    float: left;
+}
+#hardware img{
+    width: 100%;
+    height: 400px;
+}
+#software{
+    width: 50%;
+    height: 500px;
+    float: right;
+}
+#software img{
+    width: 100%;
+    height: 400px;
+}
+/*레이아웃*/
+#text_box2{
+    width: 100%; 
+    height: 500px;
+}
+section{
+    width: 100%; 
+    height: 2500px;
+    background-image: url(star.jpg);
+    background-position: center;
+    background-position: center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+}
+#bg{
+    width: 100%; 
+    height: 600px;
+}
+.pp_text{
+    color: #ffffff;
+    text-align: left;
+    font-size: 50px;
+}
+/*첫번째 레이아웃*/
+#first_layout{
+    width:60%;
+    height: 300px;
+    background-color: #333333;
+    float: left;
+    margin-bottom: 50px;
+}
+#text_box2{
+    width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+#text_box2>p{
+    margin-top: 50px; 
+    color: white;
+}
+/*두번째 레이아웃*/
+#sec_layout{
+    width: 60%;
+    height: 300px;
+    background-color: #292929;
+    float: right;
+    margin-bottom: 50px;
+}
+.T_programs{
+    width: 150px;
+    height: 100px;
+    float: left;
+    margin-left: 100px;
+}
+.U_programs{
+    width: 150px;
+    height: 100px;
+    margin-left: 170px;
+}
+#T_img{
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+}
+#thr_layout{
+    width: 100%; 
+    height: 500px;
+    float: left;
+    background-color: #292929;
+    margin-bottom: 50px;
+}
+#thr_layout h2{
+    text-align: center;
+    color: white; 
+    font-size: 40px;
+}
+#thr_layout img{
+    width: 450px;
+    height: 350px;
+    margin-left: 90px;
+}
+/*팝업*/
+#pic1:hover,#pic2:hover,#pic3:hover{
+    cursor: pointer;
+}
+.pop1,.pop2,.pop3{
+    width: 900px;
+    height: 700px;
+    position: absolute;
+    z-index: 10;
+    left: 30%;
+    top: 50%;
+    display: none;
+}
+.pop1>img,.pop2>img,.pop3>img{
+    width: 100%;
+    height: 100%;
+}
+.del{
+    width: 5%;
+    background-color: #898d8d;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
+#map{
+    width: 100%;
+    height: 500px;
+    float: right;
+}
+iframe{
+    width:900px;
+    height:500px;
+    float: left;
+}
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: #170d0d;
+    color: white;
+}
+footer>ul{
+    width: 900px;
+    height: 100px; 
+    list-style: none;
+    float: left;
+}
+footer>ul>li{
+    width: 450px;
+    height: 100px;
+    float: left; 
+    line-height: 150px;
+    font-size: 25px; 
+    text-align: center;
+    color: white;
+}
